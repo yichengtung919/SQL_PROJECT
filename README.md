@@ -5,11 +5,17 @@ The objective is to take the ecommerce database provided in csv files and analyz
 
 ## Process
 Step 1- Import data into PostgreSQL as the correct data type.
+
 Step 2- Understanding what each table means and what information are included in the tables. A schema is generated at this time for future references.
+
 Step 3- Look into the 'start with questions' file provided and refer back to the schema to see which table(s) may contain information required to answer the questions.
+
 Step 4- Perform data cleaning such as identifying duplicates or missing data and create a new table(view) as a clean dataset to refer to.
+
 Step 5- Analyze the data by using multiple queries to obtain answers to the questions.
+
 Step 6- Perform QA process by double checking if the results are conforming with expectations. 
+
 Step 7- Record each process.
 
 ## Results
