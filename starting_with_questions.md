@@ -58,7 +58,9 @@ ORDER BY	SUM(adj_total_transaction_rev) DESC
 
 
 Answer: 
+
 Top 5 Cities- San Francisco, Atlanta, Sunnyvale, Palo Alto, Tel Aviv-Yafo
+
 Top 5 Countries- United States, Israel, Australia, Canada, Switzerland 
 
 
@@ -92,13 +94,21 @@ Answer:
 
 --city
 "city_name"	"avg_num_product"
+
 "Council Bluffs"7589.0000000000000000
+
 "Cork"	        3786.0000000000000000
+
 "Bellflower"	3786.0000000000000000
+
 "Santiago"	3607.0000000000000000
+
 "Bellingham"	2836.0000000000000000
+
 "Detroit"	2748.0000000000000000
+
 "Westville"	2299.0000000000000000
+
 "Santa Fe"	1932.5000000000000000
 
 Etc...
@@ -107,13 +117,21 @@ Total of 250 rows
 
 --country
 "country"	 "avg_num_product"
+
 "Montenegro"	  3786.0000000000000000
+
 "Mali"	          3786.0000000000000000
+
 "Papua New Guinea"2558.0000000000000000
+
 "Réunion"	  2538.0000000000000000
+
 "Georgia"	  2506.4000000000000000
+
 "Côte d’Ivoire"	  1928.5000000000000000
+
 "Moldova"	  1893.0000000000000000
+
 "Tanzania"	  1429.0000000000000000
 
 Etc...
@@ -185,20 +203,32 @@ The top 2 categories in both city and country ranks are "Home/Apparel/Men's/Men'
 Out of the top 5 categories in both city and country ranks, the keyword "apparel" shows up 50% of the time. This indicates that a big portion of the customers are looking for that specific product type.
 
 Top 5 categories in cities
+
 "v2_product_category"			"count"
+
 "Home/Apparel/Men's/Men's-T-Shirts/"	113
+
 "Home/Shop by Brand/YouTube/"		98
+
 "Home/Apparel/"				93
+
 "Home/Electronics/"			69
+
 "Home/Apparel/Men's/Men's-Outerwear/"	68
 
 
 Top 5 categories in countries
+
 "v2_product_category"			"count"
+
 "Home/Shop by Brand/YouTube/"		104
+
 "Home/Apparel/Men's/Men's-T-Shirts/"	83
+
 "Home/Shop by Brand/Google/"		56
+
 "Home/Electronics/"			56
+
 "Home/Apparel/Men's/Men's-Outerwear/"	55
 
 
@@ -329,13 +359,21 @@ ORDER BY
 
 Answer:
 "city_name"	"sku"		"name"						"top_selling_product_quantity"
+
 "Adelaide"	"GGOEGAAX0568"	" Men's Watershed Full Zip Hoodie Grey"		54
+
 "Ahmedabad"	"GGOEYOLR018699"" Leatherette Notebook Combo"			1148
+
 "Akron"		"GGOEGAAX0106"	" Men's 100% Cotton Short Sleeve Hero Tee Navy"	15
+
 "Amsterdam"	"GGOEYOCR077799"" Hard Cover Journal"				1330
+
 "Ann Arbor"	"GGOEGFYQ016599""Foam Can and Bottle Cooler"			2442
+
 "Antalya"	"9180813"	" Tube Power Bank"				0
+
 "Antwerp"	"GGOEGOBG023599""Colored Pencil Set"				269
+
 "Appleton"	"GGOEGESC014699""Aluminum Handy Emergency Flashlight"		66
 
 Etc...
@@ -344,13 +382,21 @@ Total of 250 rows
 
 --top selling product in countries
 "country"	"sku"			"name"					"top_selling_product_quantity"
+
 "Albania"	"GGOEYDHJ056099"	"22 oz  Bottle Infuser"			1465
+
 "Algeria"	"GGOEYHPB072210"	" Twill Cap"				1429
+
 "Argentina"	"GGOEGCBQ016499"	"SPF-15 Slim & Slender Lip Balm"	3682
+
 "Armenia"	"GGOEAKDH019899"	"Windup Android"			1351
+
 "Australia"	"GGOEYFKQ020699"	" Custom Decals"			18930
+
 "Austria"	"GGOEYFKQ020699"	" Custom Decals"			3786
+
 "Bahamas"	"GGOEGHPB071610"	" Twill Cap"				917
+
 "Bahrain"	"GGOEGAAX0104"	" Men's 100% Cotton Short Sleeve Hero Tee White"528
 
 Etc...
@@ -360,13 +406,21 @@ Total of 134 rows
 
 --combined results for top-selling items in city and country 
 "sku"			"top_selling_product"				"count"		"area"
+
 "9180813"		" Tube Power Bank"				1		"city"
+
 "9180905"		" Men's Long Sleeve Raglan Ocean Blue"		1		"city"
+
 "9182743"		" Men's Microfiber 1/4 Zip Pullover Blue/Indigo"1		"city"
+
 "9184734"		" Learning Thermostat 3rd Gen-USA - Copper"	1		"city"
+
 "GGOEADHH055999"	"22 oz Android Bottle"				1		"city"
+
 "GGOEADHH055999"	"22 oz Android Bottle"				1		"country"
+
 "GGOEAFKQ020499"	"8 pc Android Sticker Sheet"			1		"city"
+
 "GGOEAFKQ020599"	"Android Sticker Sheet Ultra Removable"		1		"city"
 
 As can be seen in the combined table there are actually a lot of top-selling items that exists in both the city and country list. 
@@ -443,13 +497,21 @@ Answer:
 
 --transaction rev by city
 "city_name"	"country"	"transaction_rev_by_city"	"revenue_percentage"
+
 "San Francisco"	"United States"	1877510000			20.030191819403846
+
 "Atlanta"	"United States"	1596920000			17.03672093370602
+
 "Sunnyvale"	"United States"	1112230000			11.865811765207928
+
 "Palo Alto"	"United States"	608000000			6.486440352486825
+
 "Tel Aviv-Yafo"	"Israel"	602000000			6.422429427955705
+
 "New York"	"United States"	530360000			5.658138989054132
+
 "Mountain View"	"United States"	492340000			5.252523097275268
+
 "Los Angeles"	"United States"	479480000			5.1153263490302345
 
 Total of 20 rows
@@ -457,10 +519,15 @@ Total of 20 rows
 --transaction rev by country
 
 "country"	"transaction_rev_by_country"	"revenue_percentage"
+
 "United States"	15524270000			93.2309636241015
+
 "Israel"	602000000			3.615309454274443
+
 "Australia"	358000000			2.149968080781147
+
 "Canada"	150150000			0.9017254394672883
+
 "Switzerland"	16990000			0.10203340137561925
 
 
