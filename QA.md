@@ -2,7 +2,7 @@ What are your risk areas? Identify and describe them.
 
 1. There seems to be duplicated data in the all_sessions_clean table with a lot of missing country and/or city data. 
 There may be potential completion and accuracy risk to answer the first question on country and city transaction revenue.
-
+2. To check the answer in Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?
 
 
 QA Process:
@@ -24,7 +24,6 @@ WHERE		fullvisitorid IN (SELECT fullvisitorid FROM duplicated_cte)
 ORDER BY	fullvisitorid
 ```
 2.
-**Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
 ```sql
 --double check a few samples if the end result agrees with the first product in each city_name
