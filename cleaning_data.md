@@ -1,9 +1,9 @@
 What issues will you address by cleaning the data?
 1. NULL values in the secondary key and date Duplicated data in all_sessions table- filter out any null value in the secondary key column 
 2. Potential duplicated data in all_sessions table based on fullvisitorid as secondary key
-3. Null currency code in the all_sessions table- assume that all transactions are done in USD and filled the null values with USD 
-4. NULL values and duplicated data in the primary key column sku in products table. -Remove null value in the sku column and identify duplicated data if any 
-5. The unit price and revenue in the analytics table needs to be divided by 1,000,000.- added a new column for the correct unit price and revenue
+4. Null currency code in the all_sessions table- assume that all transactions are done in USD and filled the null values with USD 
+5. NULL values and duplicated data in the primary key column sku in products table. -Remove null value in the sku column and identify duplicated data if any 
+6. The unit price and revenue in the analytics table needs to be divided by 1,000,000.- added a new column for the correct unit price and revenue
 
 
 
@@ -33,7 +33,6 @@ HAVING		COUNT(*)>1)
 		AND total_transaction_rev IS NOT NULL
 ORDER BY	fullvisitorid
 ```
--- Next step is to take the average of these duplicated transactions so we have unique data in the fullvisitorid column
 
 
 3.
